@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
             `Relevant content from Contentstack (${entries.length} entries):\n` +
             entries
               .slice(0, 5)
-              .map((it: any, i: number) => `(${i + 1}) ${it.title || ''}: ${it.description || ''}`)
+              .map((it: { title?: string; description?: string }, i: number) => `(${i + 1}) ${it.title || ''}: ${it.description || ''}`)
               .join('\n');
         }
       } catch (err) {

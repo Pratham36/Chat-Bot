@@ -1,5 +1,5 @@
 // lib/providers/openai.ts
-import { ProviderAdapter, Message } from './base';
+import { ProviderAdapter, } from './base';
 
 export function OpenAIProvider(apiKey: string): ProviderAdapter {
   return {
