@@ -1,21 +1,25 @@
 {
   "name": "next-chat-platform",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.6",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contentstack/kickstart-next"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@contentstack/delivery-sdk": "^4.9.0",
-    "@contentstack/live-preview-utils": "^4.0.1",
-    "axios": "^1.11.0",
-    "contentstack": "^3.26.2",
-    "next": "15.5.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@contentstack/delivery-sdk": "^4.8.0",
+    "@contentstack/live-preview-utils": "^3.4.0",
+    "@timbenniks/contentstack-endpoints": "^1.0.14",
+    "dompurify": "^3.2.6",
+    "next": "15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -24,7 +28,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.5.2",
+    "eslint-config-next": "15.4.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
